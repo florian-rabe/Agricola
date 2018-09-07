@@ -106,9 +106,14 @@ Notes on number of squares used for pastures:
  12 Fences covering 5 squares can make at most 2 Pastures.
  13 Fences covering 5 squares can make at most 3 Pastures.
 
-## My Best Game
+## My Best Games
+
+My games can be found in the games package of the checker.
+Running the cheker produces detailed analyses, which is available in the results directory.
 
 ### Standard Version
+
+I believe 67 to be the best possible score or at least very close to it.
 
 The main difficulty is the lack of Wood (see above for analysis).
 This leads to 3 different Room building strategies, which surprisingly yield essentially the same number of points in my best games:
@@ -119,3 +124,7 @@ This leads to 3 different Room building strategies, which surprisingly yield ess
 Of these the first strategy seems best as it leaves the most slack.
 In my best game, I actually have 2 unused actions because I run out of resources to do anything with.
 By building a Clay Room, I was able to gain points for animal keeping (19 instead of 16) but lose them again because I lack Clay for the ClayOven and an only-for-points Fireplace.
+
+### Family Version
+
+TBD
