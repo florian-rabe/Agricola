@@ -12,56 +12,6 @@ abstract class StandardGameCards extends ProgrammaticSinglePlayerGame(GameType(f
   val specialActionCards = Nil
 }
 
-/**
- * Pastures are given as size/capacity.
- * 
- * Wood:
- *  We have at most 28 Wood, from which we build 2 Rooms and the Well. That leaves 17 Wood for animals.
- *  Building only 1 Wood Room leaves 22 Wood.
- *  Not building the Well leaves 18 resp. 23 Wood, but it is very hard to make up the 4 points of the Well elsewhere.
- *  
- *  Maximum animal points based on available Wood for stables and pastures, assuming free fields are filled otherwise:
- *  17 Wood:
- *  - 13 Fences + 2 Stables: 3 Pastures 1/4, 1/4, 4/8, accommodates 8S, 5B, 4C ==> 15 points, 6 squares
- *  - 15 Fences + 1 Stable:  4 Pastures 2/8, 2/4, 1/2, 1/2, accommodates 8S, 5B, 4C ==> 15 points, 6 squares
- *  - 11 Fences + 3 Stables: 3 Pastures 2/8, 1/4, 1/4, accommodates 8S, 5B, 4C ==> 16 points, 4 squares
- *  The former is better because it allows breeding 1 animal before building fences.
- *  
- *  18 Wood:
- *  - 14 Fences + 2 Stables: 3 Pastures 2/8, 2/8, 2/4, accommodates 8S, 7B, 4C ==> 16 points, 6 squares
- *  - 14 Fences + 2 Stables: 4 Pastures 2/8, 1/4, 1/2, 1/2, accommodates 8S, 5B, 4C ==> 16 points, 5 squares
- *  - 12 Fences + 3 Stables: 4 Pastures 1/4, 1/4, 1/4, 1/2, accommodates 8S, 5B, 2C ==> 16 points, 4 squares
- *  
- *  19 Wood:
- *  - 13 Fences + 3 Stables: 3 Pastures 2/8, 2/8, 1/4, accommodates 8S, 7B, 4C ==> 17 points, 5 squares
- *
- *  20 Wood:
- *  - 12 Fences + 4 Stables: 4 Pastures 1/4, 1/4, 1/4, 1/4, accommodates 8S, 5B, 4C ==> 18 points, 4 squares
- *  - 14 Fences + 3 Stables: 4 Pastures 2/8, 1/4, 1/4, 1/2, accommodates 8S, 7B, 4C ==> 18 points, 5 squares
- * 
- *  21 Wood:
- *  - 13 Fences + 4 Stables: 3 Pastures 2/16, 2/8, 1/4, accommodates 8S, 7B, 4C ==> 18 points, 5 squares
- *
- *  22 Wood:
- *  - 14 Fences + 4 Stables: 4 Pastures 2/8, 1/4, 1/4, 1/4, accommodates 8S, 7B, 4C ==> 19 points, 5 squares
- *  - 15 Fences + 3 Stables (1 Wood left): 4 Pastures 2/8, 2/8, 1/4, 1/2, accommodates 8S, 7B, 6C ===> 19 points, 6 squares
- *  
- *  23 Wood:
- *  - 15 Fences + 4 Stables: 4 Pastures 2/8, 2/4, 1/4, 1/4, accommodates 8S, 7B, 6C ==> 20 points, 6 squares
- *
- *  Pastures covering 4 squares hold at most animals for 10 out of 12 points.
- *  Pastures covering 5 squares hold at most animals for 11 out of 12 points.
- *  Pastures covering 7 squares or more can make at most 3 Pastures holding at most animals for 11 (7 squares) or 10 (8 squares) out of 12 points.
- *  12 Fences covering 5 squares can make at most 2 Pastures.
- *  13 Fences covering 5 squares can make at most 3 Pastures.
- *  
- * Produce:
- *  5 Fields, 8G, 4V ==> 12 points.
- *  
- * Family:
- *  5 members in 4 Stone Rooms ==> 23 points.  
- */
-
 /** 2 early Wood Rooms, 67 points */
 object TwoWoodRooms extends StandardGameCards with ActionAbbreviations {
   
@@ -135,7 +85,7 @@ object OneWoodRoom extends StandardGameCards with ActionAbbreviations {
 }
 
 /** 1 Wood, 1 Clay Room, 67 points */
-object Current extends StandardGameCards with ActionAbbreviations {
+object OneWoodOneClayRoom extends StandardGameCards with ActionAbbreviations {
   
   val Pass = SP
   
