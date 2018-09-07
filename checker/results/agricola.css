@@ -1,0 +1,277 @@
+/* animation-name property is hijacked for tooltips */
+
+.game {
+}
+
+.harvest, .round {
+  display: inline-block;
+  border: solid 1px;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 3px;
+  vertical-align: top;
+}
+
+.harvest {
+  border-color: red;
+}
+
+.round {
+  border-color: black;
+}
+
+.moves, .farmyard {
+  display: inline-block;
+}
+
+.move-member {
+  color: green;
+}
+
+.move-special {
+  color: blue;
+}
+
+.farmyard {
+}
+
+table, tr, td {
+  border-collapse: collapse;
+}
+
+.status td, .score td {
+  border: solid 1px;
+  text-align: right;
+}
+
+div.animals table {
+  display: inline-block;
+  margin: 2px;
+}
+
+/* details of squares, circles, etc. */
+
+.square, .member {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  background-color: green;
+  display: inline-block;
+  text-align: center;
+  vertical-align: text-bottom;
+}
+
+.member {
+  border-radius: 10px;
+  animation-name: family_members;
+}
+
+.room-wood {
+  background-color: saddlebrown;
+  animation-name: wood_room;
+}
+.room-clay {
+  background-color: maroon;
+  animation-name: clay_room;
+}
+.room-stone {
+  background-color: black;
+  animation-name: stone_room;
+}
+
+.forest {
+  background-color: green;
+  animation-name: forest;
+}
+.moor {
+  background-color: black;
+  animation-name: moor;
+}
+.empty {
+  background-color: white;
+  box-sizing: border-box;
+  border: solid 1px;
+  animation-name: empty_square;
+}
+
+.field-grain {
+  background-color: yellow;
+  animation-name: grain_field;
+}
+.field-vegetable {
+  background-color: orange;
+  animation-name: vegetable_field;
+}
+.field-empty {
+  background-color: khaki;
+  animation-name: field;
+}
+
+.pasture {
+  box-sizing: border-box;
+  background-color: white;
+  border-style: dotted;
+  border-color: black;
+  border-width: 1px;
+  width: 20px;
+  height: 20px;
+  animation-name: area_for_pastures;
+}
+
+.stable {
+  text-align: center;
+  color: green;
+  animation-name: stable;
+}
+.stable::before {
+  content: "o";
+}
+
+.edge-top {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: green;
+}
+.edge-bottom {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: green;
+}
+.edge-right {
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: green;
+}
+.edge-left {
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-left-color: green;
+}
+
+.resource, .produce, .animal, .currency {
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  margin-right: 5px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: text-bottom;
+}
+
+.produce, .currency, .resource {
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}
+
+.animal {
+  border-color: green;
+  border-style: solid;
+  border-width: 2px;
+  margin-left: 3px;
+  vertical-align: baseline;
+}
+
+.tokens-sheep::before {
+  content: "S";
+}
+.tokens-boar::before {
+  content: "B";
+}
+.tokens-cattle::before {
+  content: "C";
+}
+.tokens-horse::before {
+  content: "H";
+}
+.tokens-sheep {
+  animation-name: sheep_total;
+}
+.tokens-boar {
+  animation-name: boar_total;
+}
+.tokens-cattle {
+  animation-name: cattle_total;
+}
+.tokens-horse {
+  animation-name: horse_total;
+}
+
+/*
+
+https://icons8.com
+
+.animal {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tokens-sheep {
+  background-image: url("agricola-sheep-icon.png");
+}
+.tokens-boar {
+  background-image: url("agricola-boar-icon.png");
+}
+.tokens-cattle {
+  background-image: url("agricola-cattle-icon.png");
+}
+.tokens-horse {
+  background-image: url("agricola-horse-icon.gif");
+}
+*/
+
+.tokens-wood {
+  background-color: saddlebrown;
+  animation-name: woods_in_hand;
+}
+.tokens-clay {
+  background-color: maroon;
+  animation-name: clays_in_hand;
+}
+.tokens-reed {
+  background-color: white;
+  animation-name: reeds_in_hand;
+}
+.tokens-stone {
+  background-color: black;
+  color: white;
+  animation-name: stones_in_hand;
+}
+
+.tokens-grain {
+  background-color: yellow;
+  animation-name: grains_in_hand;
+}
+.tokens-vegetable {
+  background-color: orange;
+  animation-name: vegetables_in_hand;
+}
+
+.tokens-food {
+  background-color: gray;
+  animation-name: foods_in_hand;
+}
+.tokens-fuel {
+  background-color: black;
+  color: white;
+  animation-name: fuel_in_hand;
+}
+
+.points {
+  float: right;
+  font-weight: bold;
+  animation-name: points_after_this_round;
+}
+
+.score {
+  margin: 5px;
+}
+
+.score .total {
+  font-weight: bold;
+}
