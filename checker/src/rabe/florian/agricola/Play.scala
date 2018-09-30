@@ -22,16 +22,15 @@ abstract class ProgrammaticSinglePlayerGame(g: GameType) extends SinglePlayerGam
   }
   
   def main(args: Array[String]) {
-    if (args.length == 0) {
-       val g = new GameInProgress(this, EmptyGameHooks)
-       g.play
-       println("\n\nScoring\n" + Score(g.player,g.game.gameType))
+    val (g, cls) = if (args.length == 0) {
+       (new GameInProgress(this, EmptyGameHooks), () => ())
     } else {
        val h = new HTMLHooks(File(args(0)))
-       val g = new GameInProgress(this, h)
-       g.play
-       h.close
+       (new GameInProgress(this, h), () => h.close)
     }
+    g.play
+    cls()
+    println("\n\nScoring\n" + Score(g.player,g.game.gameType))
   }  
 }
 
