@@ -7,6 +7,12 @@ If you enjoy treating the Agricola solo game as a puzzle in which you have to fi
 That allows the tool to verify the game and give an overview that allows finding optimization potential.
 It also makes it easy to play small variants of the same game over and over to find the perfect strategy.
 
+I've mostly used this to hunt for solo game records. My current point records are:
+* Standard game
+  * Family version: 71
+  * Standard version (without cards): 67
+* Farmers of the Moor expansion
+  * Family version: 87
 
 ## License
 
