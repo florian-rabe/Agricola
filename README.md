@@ -8,7 +8,7 @@ That allows the tool to verify the game and give an overview that allows finding
 It also makes it easy to play small variants of the same game over and over to find the perfect strategy.
 
 I've mostly used this to hunt for solo game records. My current point records are:
-* Standard game
+* Base game
   * Family version: 71
   * Standard version (without cards): 67
 * Farmers of the Moor expansion
