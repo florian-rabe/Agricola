@@ -127,4 +127,12 @@ By building a Clay Room, I was able to gain points for animal keeping (19 instea
 
 ### Family Version
 
-TBD
+I believe 71 to be the best possible score.
+This requires maxing out all points but 1 (in my case: 1 Stable) and collecting all reasonable improvements (Fireplace, both Ovens, Well, Pottery, Basketry) as well as maxing out bonus points for Reed.
+It may be possible to gain 1 additional point; but gaining 2 additional points should be impossible.
+
+My 71-game deviates from the two-early-wood-rooms standard game in a few respects:
+* Fishing and Starting Player are taken 3 times overall in order to feed the family in the first 2 stages. That allows for the most rapid family growth.
+* The Day Laborer is used 3 times to gain 29 Wood for 2 Wood Rooms, 15 Fences, 3 Stables (for 1 Wood each), and the Well.
+* The Day Laborer is also used to gain 1 early Stone (for the Clay Oven) and 1 extra Reed (to max out bonus points).
+* Sheep are only taken once because there is already enough Food in the early game.
