@@ -3,6 +3,7 @@ package rabe.florian.agricola
 /** the kind of game, used to check legality of moves */
 case class GameType(family: Boolean, moor: Boolean) {
   override def toString = (if (family) "family" else "standard") + (if (moor) " moor" else "")
+  def toStringLong = s"Agricola game using ${if (family) "family" else "standard"} version${if (moor) " with Farmers of the Moor expansion" else ""}"
 }
 
 /** throw on invalid single-player games */

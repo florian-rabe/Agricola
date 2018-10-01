@@ -1,0 +1,1 @@
+java -cp %~dp0/../bin;C:\frabe\MMT-devel\deploy\lib\* rabe.florian.agricola.games.PlayAll

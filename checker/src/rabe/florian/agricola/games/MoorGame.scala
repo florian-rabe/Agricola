@@ -17,7 +17,7 @@ abstract class Cards extends ProgrammaticSinglePlayerGame(GameType(true,true)) {
 /**
  * Heavy use of Horses, 87 points.
  */
-object MoorBest extends Cards with ActionAbbreviations {
+object ManyHorses extends Cards with ActionAbbreviations {
   import Square._
   
   round(DL(Stone), HC, TG)

@@ -22,20 +22,20 @@ abstract class ProgrammaticSinglePlayerGame(g: GameType) extends SinglePlayerGam
   }
   
   def main(args: Array[String]) {
-    val (g, cls) = if (args.length == 0) {
+    val (gip, cls) = if (args.length == 0) {
        (new GameInProgress(this, EmptyGameHooks), () => ())
     } else {
-       val h = new HTMLHooks(File(args(0)))
+       val h = new HTMLHooks(File(args(0)), g)
        (new GameInProgress(this, h), () => h.close)
     }
-    g.play
+    gip.play
     cls()
-    println("\n\nScoring\n" + Score(g.player,g.game.gameType))
-  }  
+    println("\n\nScoring\n" + Score(gip.player,gip.game.gameType))
+  }
 }
 
 /** produce HTML log of game */
-class HTMLHooks(f: File) extends GameHooks {
+class HTMLHooks(f: File, g: GameType) extends GameHooks {
    val h = new HTMLFileWriter(f)
    import h._
    implicit def iToS(i: Int) = i.toString
@@ -46,6 +46,7 @@ class HTMLHooks(f: File) extends GameHooks {
      javascript("agricola.js")
    }
    literal("<body>")
+   literal(s"<h2>${g.toStringLong}</h2>")
 
    def pointRow(cls: String, a: String, b: String, c: String) {
       tr(cls) {
