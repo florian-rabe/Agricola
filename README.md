@@ -17,4 +17,4 @@ I've mostly used this to hunt for solo game records. My current point records ar
 ## License
 
 3-clause BSD license with the additional requirement that you may only use in a way that respects the property rights of the creator, owner, publisher etc. of Agricola.
-In particular, you may only run the code if you own a physical copy of the Agricola game.
+In particular, you may only run the code if you have a physical copy of the Agricola at your disposal.
